@@ -1,0 +1,1 @@
+export const THE_ONE_API = import.meta.env.VITE_THE_ONE_API;
