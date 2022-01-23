@@ -20,20 +20,21 @@
 
 <style type="scss">
     .theme-toggle {
+        --size: 30px;
         margin-left: auto;
         cursor: pointer;
         background: 0;
         border: 0;
         opacity: 0.8;
-        max-width: 30px;
-        max-height: 30px;
+        max-block-size: var(--size);
+        max-inline-size: var(--size);
         border-radius: 50%;
         position: relative;
         z-index: 10;
         isolation: isolate;
         svg {
-            width: 30px;
-            height: 30px;
+            inline-size: var(--size);
+            block-size: var(--size);
             fill: var(--clr-foreground);
         }
         &:before {
